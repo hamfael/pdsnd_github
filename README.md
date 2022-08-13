@@ -14,4 +14,8 @@ bikeshare.py - Main script
 chicago.csv, new_york_city.csv, washington.csv - csv files containing the data
 
 ### Credits
-forked from: https://github.com/udacity/pdsnd_github
+- forked from: https://github.com/udacity/pdsnd_github
+
+- some links that helped me to build the script:
+  - How to calculate mode over two columns: https://stackoverflow.com/questions/55719762/how-to-calculate-mode-over-two-columns-in-a-python-dataframe
+  - How to check if a column exists in pandas: https://stackoverflow.com/questions/24870306/how-to-check-if-a-column-exists-in-pandas
