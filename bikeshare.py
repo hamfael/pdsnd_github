@@ -88,7 +88,14 @@ def load_data(city, month, day):
     return df
 
 def raw_data(df):
-    """Displays raw data to the user"""
+    """
+    Displays raw data to the user using a previously filtered DataFrame
+
+    The function ask to te user if he want to see raw data from bikeshare
+    filtered DFs. After, it displays 5 lines of raw data and also ask to the
+    user if he want to see more 5 lines, until the user type "no" or the DF come
+    to an end.
+    """
     # set max columns to display to 200
     pd.set_option('display.max_columns',200)
 
