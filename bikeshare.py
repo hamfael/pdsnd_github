@@ -102,20 +102,10 @@ def raw_data(df):
     while True: # while loop and if statement to check valid input
         raw = input("\nWould you like to see the raw data? (Yes or No)\n").lower()
         if raw == 'yes':
-            nrow = df.shape[0] # collecting number of rows
-            #setting up the while loop to ask for the user 5 more lines
-            i = 0
-            j = 5
-            while j <= nrow:
-                print(df.iloc[i:j], "\n\n") #print 5 lines of the filtered data frame
-                if j <= nrow:
-                    next5 = input('Would you like to see the next 5 lines? (Yes or No)\n').lower()
-                    if next5 == 'yes':
-                        i = j
-                        j += 5
-                    else:
-                        break
-                else:
+            while True:
+                print(df.sample(5))
+                view_more = input("Do you want to see more raw data? Type 'yes' to see more\n")
+                if view_more != "yes":
                     break
             break
         elif raw == 'no':
