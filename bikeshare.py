@@ -161,7 +161,7 @@ def station_stats(df):
     com_start_end_value = (df['Start Station'] + df['End Station']).value_counts().max()
     print('The most popular "Start-End" combination of Stations is {}, with {} trips.\n'.format(com_start_end, com_start_end_value))
 
-    print("\nThis took {} seconds.".format(round((time.time() - start_time), 3)))
+    print("\nThis calculation took {} seconds to run.".format(round((time.time() - start_time), 3)))
     print('-'*40)
 
 
@@ -186,7 +186,7 @@ def trip_duration_stats(df):
     mean_travel_time_sec = round(mean_travel_time % 60)
     print('The mean travel time is {} minutes and {} seconds\n'.format(mean_travel_time_min, mean_travel_time_sec))
 
-    print("\nThis took {} seconds.".format(round((time.time() - start_time), 3)))
+    print("\nThis calculation took {} seconds to run".format(round((time.time() - start_time), 3)))
     print('-'*40)
 
 
@@ -210,7 +210,7 @@ def user_stats(df):
         print('The most common birth year between users is {}\n'.format(round(df['Birth Year'].mode()[0])))
 
 
-    print("\nThis took {} seconds.".format(round((time.time() - start_time), 3)))
+    print("\nThis calculation took {} seconds to run".format(round((time.time() - start_time), 3)))
     print('-'*40)
 
 
